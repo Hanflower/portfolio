@@ -1,4 +1,5 @@
 # portfolio
+각 프로젝트의 자세한 설명은 따로 공유되는 노션 페이지 또는 pdf 파일 참조
 
 ## 1. 글씨체-특성 분석 모델링
 - 'handwriting_personality_APP_ML_RS' folder
