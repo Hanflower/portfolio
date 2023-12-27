@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/ic_close"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="오늘의 글귀 작성 전 주의사항    "
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="1. 글귀 사진을 찍을 때는 작성한 연필이나 펜의 가로 길이에 맞춰 촬영해 주세요. 이후 펜은 나오지 않도록 편집하여 올려주시기 바랍니다."
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"/>
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:src="@drawable/pen"/>
+                <!--펜 사진 -->
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/arrow"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/crop"/>
+                <!--펜 제거 사진 -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="2. 오늘의 글귀를 작성할 때는 줄이 없는 깨끗한 종이 위에 작성해야 하고 사용한 펜이나 볼펜은 나오지 않도록 합니다."
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/infolinex"/>
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+
+                        android:src="@drawable/infopenx"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="3. 오늘의 글귀는 3회 이상 사용자의 글귀를 수집하여 분석한 뒤 사용자의 성향을 알아보는 시스템입니다 "
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="4. 글귀는 글씨체 특성을 분석하고 개인 사용자에게 맞춤 알고리즘을 적용시키는 용도로만 사용됩니다. "
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"/>
+
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    android:text="5. 뭘 더 넣어야할까요 고민해보기 "-->
+                <!--                    android:textSize="15dp"-->
+                <!--                    android:layout_marginTop="15dp"/>-->
+                <Button
+                    android:id="@+id/next_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:text="확인"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

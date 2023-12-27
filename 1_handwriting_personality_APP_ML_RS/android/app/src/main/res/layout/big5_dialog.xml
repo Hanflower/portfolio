@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="특성분석 모델은 카카오같이가치 Big 5 성격검사 \n한글 설문 결과를 바탕으로 구축되었습니다."
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="#0f4c81"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Q.막대가 안 나와요!"
+        android:textSize ="15sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="A.필적 데이터를 쌓은 날이 최소 3일 이상일 때, 결과가 나옵니다. 분석탭 달력에서 필적 데이터가 쌓인 날의 수를 확인해주세요. 만약 수가 3일 이상인데도 나오지 않는다면, 데이터 문제일 수 있습니다. 오늘의 글귀를 계속 쌓아주세요 :)"
+        android:textSize="15sp"/>
+
+
+
+
+    <Button
+        android:id="@+id/closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="닫기" />
+
+
+</LinearLayout>

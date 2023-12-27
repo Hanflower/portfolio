@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="게시글"/>
+    <item
+        android:id="@+id/menu_search"
+        android:title="검색"/>
+    <item
+        android:id="@+id/menu_quest"
+        android:title="분석"/>
+    <item
+        android:id="@+id/menu_profile"
+        android:title="내 정보"/>
+</menu>

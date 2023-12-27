@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">소서특필</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_fullscreen2">회원가입</string>
+    <string name="textUserName">textUserName</string>
+    <string name="textUserID">textUserID</string>
+    <string name="textPassword1">textPassword1</string>
+    <string name="textPassword2">textPassword2</string>
+    <string name="textUserEmail">textUserEmail</string>
+    <string name="search">검색</string>
+
+
+</resources>

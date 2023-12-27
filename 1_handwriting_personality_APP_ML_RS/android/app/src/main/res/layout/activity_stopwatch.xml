@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StopWatchActivity">
+
+    <TextView
+        android:id="@+id/today_quote"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="            두 손을\n            높이 들고 딴\n            추억 속 사과 한 알"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오탈자가 발생했을 경우 지우개로 지우지 마세요."
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오탈자를 무시하거나 스톱워치를 초기화 후 새로 작성해주세요."
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_margin="15dp"/>
+
+    <View
+        android:background="@color/classicBlue"
+        android:layout_width="match_parent"
+        android:layout_height="6px"/>
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작"/>
+
+        <Button
+            android:id="@+id/stop_save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="중지 및 저장"/>
+        <Button
+            android:id="@+id/reset_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:text="초기화"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/next"
+        android:layout_height = "wrap_content"
+        android:layout_width = "wrap_content"
+        android:layout_gravity = "right"
+        android:layout_marginTop = "20dp"
+        android:layout_marginRight = "20dp"
+        android:text="다음"
+        android:textSize="15dp"/>
+
+
+</LinearLayout>

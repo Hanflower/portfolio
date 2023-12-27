@@ -1,0 +1,39 @@
+CREATE TABLE USER_FOLLOWING(
+	userID varchar(20) not null,
+	followingID varchar(20) not null,
+	PRIMARY KEY(userID, followingID),
+	FOREIGN KEY(userID)
+	REFERENCES USER_INFO(userID) ON UPDATE CASCADE ON DELETE CASCADE,
+	FOREIGN KEY(followingID)
+	REFERENCES USER_INFO(userID) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE POST_BOOKMARK(
+	postID int not null,
+	userID varchar(20) not null,
+	PRIMARY KEY(postID, userID),
+	FOREIGN KEY(postID)
+	REFERENCES USER_POST(postID) ON UPDATE CASCADE ON DELETE CASCADE,
+	FOREIGN KEY(userID)
+	REFERENCES USER_INFO(userID) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE POST_EMOTICON(
+	postID int not null,
+	userID varchar(20) not null,
+	emoticon int not null,
+	PRIMARY KEY(postID, userID),
+	FOREIGN KEY(postID)
+	REFERENCES USER_POST(postID) ON UPDATE CASCADE ON DELETE CASCADE,
+	FOREIGN KEY(userID)
+	REFERENCES USER_INFO(userID) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE USER_SEARCH(
+	userID varchar(20) not null,
+	searchText varchar(20) not null,
+	searchDate datetime not null default now(),
+	PRIMARY KEY(userID, searchDate),
+	FOREIGN KEY(userID)
+	REFERENCES USER_INFO(userID) ON UPDATE CASCADE ON DELETE CASCADE
+);

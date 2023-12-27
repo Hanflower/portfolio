@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/> <!-- 인터넷 권한 선언-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+<!--    &lt;!&ndash;andriod13 api level 33 1030추가 수정 2줄&ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>-->
+<!--    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>-->
+
+<!--    &lt;!&ndash;android14 1030추가 수정 1줄&ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>-->
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ARAM"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".Big5Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Theme.ARAM.Fullscreen">
+        </activity>
+
+        <activity
+            android:name=".InformationActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".InterestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Theme.ARAM.Fullscreen">
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ARAM.Fullscreen">
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing">
+        </activity>
+
+        <activity
+            android:name=".OriginDialog"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Dialog">
+        </activity>
+
+        <activity android:name=".OtherProfilePostActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".OtherProfileScrapActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".PostActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".ProfilePostActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".ProfileScrapActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".SearchPostActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_fullscreen2"
+            android:theme="@style/Theme.ARAM.Fullscreen">
+        </activity>
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".StopWatchActivity"
+            android:exported="true">
+        </activity>
+
+
+        <activity
+            android:name=".TodayPostActivity"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".UpdatePostActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true">
+        </activity>
+
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+<!--        <provider-->
+<!--            android:name="android.support.v4.content.FileProvider"-->
+<!--            android:authorities="com.shuvic.alumni.cameraalbum"-->
+<!--            android:exported="false"-->
+<!--            android:grantUriPermissions="true">-->
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/file_paths" />-->
+<!--        </provider>-->
+
+    </application>
+
+</manifest>

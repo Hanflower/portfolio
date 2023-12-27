@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:theme="@style/ThemeOverlay.ARAM.FullscreenContainer"
+    tools:context=".RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:max="100" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_close" />
+
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#0F4C82"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ic_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_info" />
+
+            </RelativeLayout>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/OCEANgraph"
+                android:layout_width="match_parent"
+                android:layout_height="240dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/OCEAN_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#0F4C82"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/OCEAN_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="특성을 눌러주세요."
+                        android:textColor="#0F4C82"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/OCEAN_description2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:scrollbars="vertical"
+                        android:text=""
+                        android:textColor="#0F4C82"
+                        android:textSize="15dp" />
+
+                    <!--            <ScrollView-->
+                    <!--                android:id="@+id/bio_scroll"-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="match_parent">-->
+
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/OCEAN_description2"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginTop="20dp"-->
+                    <!--                    android:layout_marginBottom="5dp"-->
+                    <!--                    android:text=""-->
+                    <!--                    android:textColor="#0F4C82"-->
+                    <!--                    android:textSize="15dp"-->
+                    <!--                    android:gravity="center"-->
+                    <!--                    />-->
+
+                    <!--            </ScrollView>-->
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

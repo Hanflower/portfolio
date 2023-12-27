@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="0dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/classicBlue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/userid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/username"
+                    android:textColor="@color/classicBlue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/modify_post"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_toLeftOf="@+id/delete_post"
+                    android:background="@drawable/ic_edit" />
+
+                <Button
+                    android:id="@+id/delete_post"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/ic_deletepost" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/post_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+
+                <CheckBox
+                    android:id="@+id/love"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_excited"
+                    android:button="@null"
+                    />
+
+                <TextView
+                    android:id="@+id/num_love"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:textColor="@color/classicBlueDark"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:layout_toRightOf="@+id/love"
+                    />
+
+                <CheckBox
+                    android:id="@+id/surprise"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_satisfied"
+                    android:button="@null"
+                    android:layout_toRightOf="@+id/num_love"
+                    />
+
+                <TextView
+                    android:id="@+id/num_surprise"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:textColor="@color/classicBlueDark"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:layout_toRightOf="@+id/surprise"
+                    />
+
+                <CheckBox
+                    android:id="@+id/angry"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_stressed"
+                    android:button="@null"
+                    android:layout_toRightOf="@+id/num_surprise"
+                    />
+
+                <TextView
+                    android:id="@+id/num_angry"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:textColor="@color/classicBlueDark"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:layout_toRightOf="@+id/angry"
+                    />
+
+                <CheckBox
+                    android:id="@+id/sad"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_sad"
+                    android:button="@null"
+                    android:layout_toRightOf="@+id/num_angry"
+                    />
+
+                <TextView
+                    android:id="@+id/num_sad"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:textColor="@color/classicBlueDark"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:layout_toRightOf="@+id/sad"
+                    />
+
+                <!--댓글달기 xml-->
+                <!--            <ImageView-->
+                <!--                android:layout_width="30dp"-->
+                <!--                android:layout_height="30dp"-->
+                <!--                android:id="@+id/comment"-->
+                <!--                android:src="@drawable/ic_comment"-->
+                <!--                android:layout_toEndOf="@id/like"-->
+                <!--                android:layout_marginStart="10dp"/>-->
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/save"-->
+                <!--                    android:layout_width="30dp"-->
+                <!--                    android:layout_height="30dp"-->
+                <!--                    android:layout_alignParentEnd="true"-->
+                <!--                    android:src="@drawable/ic_savee_black" />-->
+
+                <Button
+                    android:id="@+id/bookmark"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_toLeftOf="@+id/num_bookmark"
+                    android:background="@drawable/ic_bookmark" />
+
+                <TextView
+                    android:id="@+id/num_bookmark"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:textColor="@color/classicBlueDark"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/classicBlueDark"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/origin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp" />
+
+                <TextView
+                    android:id="@+id/origin_writer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/postdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/classicBlueDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/classicBlueDark"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
